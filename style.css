@@ -1,0 +1,158 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5efff, #e8d9ff);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header{
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    color: white;
+    text-align:center;
+    justify-content:center;
+    padding: 50px 20px;
+    
+
+}
+    
+    .logo {
+        width:130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+    }
+header h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav{
+    margin-top: 25px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    background: white;
+    color: #6a0dad;
+}
+
+/* Sections */
+section{
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(106,13,173,.15);
+}
+
+section h2{
+    color: #6a0dad;
+    margin-bottom: 20px;
+    border-left: 6px solid #8a2be2;
+    padding-left: 12px;
+}
+
+/* Skills */
+ul{
+    padding-left: 20px;
+}
+
+#skills ul li{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+/* Projects */
+article{
+    background: #f6f0ff;
+    border-left: 6px solid #8a2be2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+article:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(138,43,226,.2);
+}
+
+/* Contact */
+a{
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #8a2be2;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer{
+    background: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Smooth Scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    header h1{
+        font-size: 2.2rem;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 12px;
+       
+    }
+
+    section{
+        width: 92%;
+        padding: 25px;
+    }
+}
